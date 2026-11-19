@@ -27,7 +27,7 @@ Update later with `/plugin marketplace update keshavsinha007`.
 ## Components
 
 - `.mcp.json` - the official GitHub MCP server (`https://api.githubcopilot.com/mcp/`) for search, file reading, issues and PRs.
-- `scripts/scout_tool.py` - dependency-free Python helper: `whoami`, `search`, `rate`, `compare`, `find`.
+- `skills/repo-rating/scripts/scout_tool.py` - dependency-free Python helper: `whoami`, `search`, `rate`, `compare`, `find`.
   Produces a 0-100 health score (stars, freshness, commit activity, contributors, issue health,
   license, docs, releases) with A-F grades and red-flag warnings.
 
@@ -62,11 +62,11 @@ No data is collected by the plugin author. See [PRIVACY.md](PRIVACY.md).
 Run these on a real machine with internet access:
 
 ```bash
-python3 scripts/scout_tool.py whoami                       # shows your login and ~5000 calls/hour
-python3 scripts/scout_tool.py search "pdf table extraction" --language python --min-stars 100 --limit 5
-python3 scripts/scout_tool.py rate psf/requests            # expect grade A
-python3 scripts/scout_tool.py compare pallets/flask fastapi/fastapi
-python3 scripts/scout_tool.py find "markdown to pdf" --language python --limit 3
+python3 skills/repo-rating/scripts/scout_tool.py whoami                       # shows your login and ~5000 calls/hour
+python3 skills/repo-rating/scripts/scout_tool.py search "pdf table extraction" --language python --min-stars 100 --limit 5
+python3 skills/repo-rating/scripts/scout_tool.py rate psf/requests            # expect grade A
+python3 skills/repo-rating/scripts/scout_tool.py compare pallets/flask fastapi/fastapi
+python3 skills/repo-rating/scripts/scout_tool.py find "markdown to pdf" --language python --limit 3
 ```
 
 Then in Claude Code: `claude --plugin-dir .` and ask "find the best Python library for reading Excel files and install it". 

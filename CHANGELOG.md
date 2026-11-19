@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1 - 2026-11-19
+- Moved the helper script into the repo-rating skill folder (`skills/repo-rating/scripts/scout_tool.py`) to meet directory file rules.
+
 ## 1.1.0 - 2026-11-19
 - Meets Anthropic directory rules for unverified publishers: removed the command hook and its
   script, and removed the `network` field.

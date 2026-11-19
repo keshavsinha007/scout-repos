@@ -30,7 +30,7 @@ Downloaded code is untrusted until reviewed. Follow every step.
 
 ## 1. Check before downloading
 
-1. Rate it: `python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py rate owner/repo`.
+1. Rate it: `python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py rate owner/repo`.
    If grade is D/F, archived, or unlicensed, tell the user and ask whether to continue.
 2. Confirm the destination folder with the user if they haven't given one. Default: `./repos/<repo-name>`
    inside the current working folder - never the home directory root or a system path.

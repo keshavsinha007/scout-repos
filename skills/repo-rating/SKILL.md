@@ -13,8 +13,8 @@ metadata:
 ## Run the scorer
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py rate owner/repo          # one repo
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py compare a/x b/y c/z      # ranked table
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py rate owner/repo          # one repo
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py compare a/x b/y c/z      # ranked table
 ```
 
 Add `--json` to get machine-readable output. Accept full URLs from the user and convert them

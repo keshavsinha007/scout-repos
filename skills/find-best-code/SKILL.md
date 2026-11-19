@@ -23,7 +23,7 @@ metadata:
 Run the automated finder first:
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py find "<task keywords>" --language <lang> --limit 5
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py find "<task keywords>" --language <lang> --limit 5
 ```
 
 Then widen with 2-3 extra searches via the `repo-search` skill using synonyms and topics
@@ -39,7 +39,7 @@ it returns text-to-speech ones. Check each candidate does the task the right way
 ## 3. Rate and compare
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py compare owner/a owner/b owner/c ...
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py compare owner/a owner/b owner/c ...
 ```
 
 For the top 3, go beyond the score (see `repo-rating`): read the README quick-start,

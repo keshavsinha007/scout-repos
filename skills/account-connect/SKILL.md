@@ -11,13 +11,13 @@ metadata:
 # Connect Claude to the user's GitHub account
 
 Goal: leave the session with a working, least-privilege GitHub sign-in that both the
-`github` MCP server and the helper script (`${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py`) can use.
+`github` MCP server and the helper script (`${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py`) can use.
 
 ## 1. Check what already works
 
 Run, in this order, and stop at the first success:
 
-1. `python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py whoami` - reports the login and remaining API calls.
+1. `python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py whoami` - reports the login and remaining API calls.
 2. `gh auth status` - the GitHub CLI may already be signed in.
 3. Try a lightweight `github` MCP tool (for example `get_me`) if the MCP tools are loaded.
 

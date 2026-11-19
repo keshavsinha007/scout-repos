@@ -14,7 +14,7 @@ metadata:
 
 1. **`github` MCP server** - `search_repositories`, `search_code`, `search_issues`, `get_file_contents`.
 2. **Helper script** -
-   `python3 ${CLAUDE_PLUGIN_ROOT}/scripts/scout_tool.py search "<query>" [--type repositories|code|issues] [--sort best|stars|updated] [--language X] [--min-stars N] [--limit N]`
+   `python3 ${CLAUDE_PLUGIN_ROOT}/skills/repo-rating/scripts/scout_tool.py search "<query>" [--type repositories|code|issues] [--sort best|stars|updated] [--language X] [--min-stars N] [--limit N]`
 3. **GitHub CLI** - `gh search repos|code|issues "<query>" --limit 20 --json ...`
 4. **Web search** with `site:github.com` as a last resort (no metadata, lower quality).
 
