@@ -30,7 +30,8 @@ Offer these, recommended first:
 | Method | When to use | What the user does |
 |---|---|---|
 | **GitHub CLI (`gh auth login`)** | Local machine with a terminal | Run `gh auth login --web --scopes "repo,read:org"` and finish the browser prompt. The script picks the token up automatically. |
-| **Fine-grained personal access token** | Cloud / CI / no browser | Create at https://github.com/settings/personal-access-tokens/new with **read-only** access to *Contents*, *Metadata*, *Issues*, *Pull requests*. Set it as `GITHUB_PERSONAL_ACCESS_TOKEN` (and `GITHUB_TOKEN`) in the environment. |
+| **Plugin token setting** | Extra GitHub tools (issues, PRs, files) | When the plugin is enabled, Claude Code asks for an optional *GitHub token* and stores it securely. Create a fine-grained token at https://github.com/settings/personal-access-tokens/new with **read-only** *Contents*, *Metadata*, *Issues*, *Pull requests*. Change it later via `/plugin` → scout-repos → configure. |
+| **Environment variable** | CI / no browser | Set `GITHUB_TOKEN` to a fine-grained token; the helper script picks it up. |
 | **Claude GitHub connector** | Using Claude on the web/app | Connect GitHub in Claude's connector settings, then retry. |
 
 Rules:

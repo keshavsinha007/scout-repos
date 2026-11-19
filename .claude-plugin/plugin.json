@@ -1,11 +1,15 @@
 {
   "name": "scout-repos",
-  "version": "1.0.0",
+  "displayName": "Scout Repos",
+  "version": "1.1.0",
   "description": "Connect Claude to your GitHub account to search GitHub, rate repositories with a 0-100 quality score, safely clone and install repos, and find the best code or models for any task.",
   "author": {
     "name": "keshavsinha007",
     "url": "https://github.com/keshavsinha007"
   },
+  "homepage": "https://github.com/keshavsinha007/scout-repos",
+  "repository": "https://github.com/keshavsinha007/scout-repos",
+  "license": "MIT",
   "keywords": [
     "github",
     "search",
@@ -15,18 +19,16 @@
     "clone",
     "code-discovery"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/keshavsinha007/scout-repos",
-  "repository": "https://github.com/keshavsinha007/scout-repos",
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://github.com/keshavsinha007/scout-repos#readme",
+  "supportUrl": "https://github.com/keshavsinha007/scout-repos/issues",
   "privacyPolicyUrl": "https://github.com/keshavsinha007/scout-repos/blob/main/PRIVACY.md",
-  "network": {
-    "hosts": [
-      "api.github.com",
-      "github.com",
-      "codeload.github.com",
-      "raw.githubusercontent.com",
-      "api.githubcopilot.com"
-    ]
-  },
-  "icon": ".claude-plugin/icon.png"
+  "userConfig": {
+    "github_token": {
+      "type": "string",
+      "title": "GitHub token (optional)",
+      "description": "A fine-grained GitHub personal access token with read-only Contents, Metadata, Issues and Pull requests. Enables the GitHub tools. Leave empty to use the GitHub CLI sign-in (gh auth login) instead.",
+      "sensitive": true
+    }
+  }
 }

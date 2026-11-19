@@ -19,7 +19,8 @@ Your conversation with Claude is covered by Anthropic's privacy policy.
 
 ## Your GitHub token
 
-- Read only from your environment (`GITHUB_TOKEN`, `GH_TOKEN`, `GITHUB_PERSONAL_ACCESS_TOKEN`) or the GitHub CLI.
+- Provided by you, either in the plugin's optional token setting (kept in Claude Code's secure storage)
+  or by signing in with the GitHub CLI (`gh auth login`). The helper script also accepts `GITHUB_TOKEN`.
 - Never written to disk, logged, or sent anywhere except GitHub.
 - You can revoke it at any time at https://github.com/settings/tokens.
 
