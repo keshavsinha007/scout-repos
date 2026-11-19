@@ -1,0 +1,14 @@
+{
+  "name": "keshavsinha007",
+  "description": "scout-repos: Claude plugins for finding, rating and safely installing GitHub code.",
+  "owner": {
+    "name": "keshavsinha007"
+  },
+  "plugins": [
+    {
+      "name": "scout-repos",
+      "source": "./",
+      "description": "Search GitHub, rate repositories 0-100, safely install the one you choose, and find the best code or model for a task."
+    }
+  ]
+}
