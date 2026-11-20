@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2026-11-20
+- New look: Scout, an original pixel-art mascot. Animated README banner, logo and new plugin icon.
+- README: badges and an example of the find-best-code output.
+
 ## 1.1.1 - 2026-11-19
 - Moved the helper script into the repo-rating skill folder (`skills/repo-rating/scripts/scout_tool.py`) to meet directory file rules.
 

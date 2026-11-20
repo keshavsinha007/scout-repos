@@ -1,7 +1,29 @@
+<p align="center">
+  <img src="assets/banner.gif" alt="Scout, a pixel explorer with a magnifying glass, walking along a Git commit line and lighting up each commit it inspects" width="720">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude%20Code-plugin-2DBEAA?style=flat-square" alt="Claude Code plugin">
+  <img src="https://img.shields.io/badge/version-1.2.0-FACC15?style=flat-square" alt="Version 1.2.0">
+  <img src="https://img.shields.io/badge/license-MIT-6E82C2?style=flat-square" alt="MIT license">
+</p>
+
 # scout-repos
 
-Lets Claude work with GitHub on your behalf: connect to your account, search GitHub,
-rate repositories, clone and install them, and recommend the best code or model for a task.
+**Meet Scout, your GitHub explorer.** Lets Claude work with GitHub on your behalf: connect to
+your account, search GitHub, rate repositories, clone and install them, and recommend the best
+code or model for a task. You always choose what gets installed.
+
+```text
+> find the best Python library for markdown to pdf
+
+ #  repository                     score  grade  stars   license
+ 1  jmaupetit/md2pdf               72.3   B      447     MIT
+ 2  vb64/markdown-pdf              61.6   C      163     AGPL-3.0
+ 3  ljpengelen/markdown-to-pdf     50.8   C       74     NONE  ! no license
+
+Which one should I install? (1-3, or none)
+```
 
 ## Install
 
